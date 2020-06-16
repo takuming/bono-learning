@@ -6,6 +6,8 @@
         <li><router-link to="/">ホーム</router-link></li>
         <li><router-link to="/about">Dlearningについて</router-link></li>
         <li><router-link to="/courses">コミュニティ</router-link></li>
+        <li><a href="#/ms/signup/5ee8288c236d670004ffb9ee">サインアップ</a></li>
+        <li data-ms-content="all-learning">テスト用の表示</li>
       </ul>
 
       <ul class="navlist">
