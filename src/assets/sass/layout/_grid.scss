@@ -1,0 +1,11 @@
+// フォントーテキスト
+@mixin flex-spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin card{
+  background-color: $color-bgLight0;
+  border-radius: 20px;
+  padding: 56px;
+}

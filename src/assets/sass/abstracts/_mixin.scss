@@ -1,0 +1,78 @@
+// フォントーテキスト
+@mixin text-bodyBig {
+  font-size:$text-bodyBig;
+  line-height:1.6;
+  font-weight: 500;
+}
+@mixin text-bodyNormal {
+  font-size:$text-bodyNormal;
+  line-height:1.6;
+  font-weight: 500;
+}
+@mixin text-bodySmall {
+  font-size:$text-bodySmall;
+  line-height:1.6;
+  font-weight: 500;
+}
+@mixin text-bodyTiny {
+  font-size:$text-bodyTiny;
+  line-height:1.6;
+  font-weight: 500;
+}
+
+// フォントータイトル
+@mixin text-titleBigger {
+  font-size:$text-titleBigger;
+  line-height:1.4;
+  font-weight: 800;
+}
+@mixin text-titleBig {
+  font-size:$text-titleBig;
+  line-height:1.6;
+  font-weight: 800;
+}
+@mixin text-titleNormal {
+  font-size:$text-titleNormal;
+  line-height:1.6;
+  font-weight: 800;
+}
+@mixin text-titleSmall {
+  font-size:$text-titleSmall;
+  line-height:1.6;
+  font-weight: 800;
+}
+@mixin text-titleTiny {
+  font-size:$text-titleTiny;
+  line-height:1.8;
+  font-weight: 800;
+}
+
+// グラデーションテキスト
+@mixin main-gradient{
+  color: $color-mainOrange;
+  background: $color-mainAkebono;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// ボタン
+@mixin buttonMain{
+  display: block;
+  padding: 20px 40px;
+  background-color: $color-accentKiyoi;
+  color:$color-textWhite ;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  margin: 0 auto;
+}
+
+// リンク
+@mixin linkColor() {
+  color:blue ;
+  
+  &:hover, &:active, &:focus {
+      color: lighten(blue, 20%);
+  }
+}
+

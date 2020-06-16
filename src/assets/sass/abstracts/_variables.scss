@@ -1,0 +1,45 @@
+// フォント-テキスト
+$text-bodyBig:16px;
+$text-bodyNormal:14px;
+$text-bodySmall:12px;
+$text-bodyTiny:10px;
+
+// フォント-タイトル
+$text-titleBigger:64px;
+$text-titleBig:40px;
+$text-titleNormal:32px;
+$text-titleSmall:24px;
+$text-titleTiny:20px;
+
+// カラーメイン
+$color-mainAkebono:linear-gradient(-45deg,#FF810F,#9746FF);
+$color-mainOrange:#FF9B70;
+
+// カラーテキスト
+$color-textWhite:#fff;
+$color-textGray0:rgba(255,255,255,0.72);
+$color-textGray1:rgba(255,255,255,0.56);
+
+// カラーボーダー
+$color-borderNormal:rgba(255,255,255,0.2);
+
+// カラーBG
+$color-bgBase:#1E1E22;
+$color-bgLight0:rgba(255,255,255,0.08);
+$color-bgLight1:rgba(255,255,255,0.12);
+
+// カラーアクセント
+$color-accentSun:#E8EC17;
+$color-accentTea:#389687;
+$color-accentKiyoi:#1665FF;
+
+// 余白
+$margin--3:8px;
+$margin--2:12px;
+$margin--1:16px;
+$margin-0:20px;
+$margin-1:24px;
+$margin-2:32px;
+$margin-3:64px;
+$margin-4:96px;
+$margin-5:128px;

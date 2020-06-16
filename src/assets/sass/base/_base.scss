@@ -1,0 +1,19 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
+
+html{
+  font-size: 62.5%;
+  width: 100%;
+  color: $color-textWhite;
+  background-color: #1E1E22;
+}
+
+#app {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif','Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li{
+  list-style: none;
+}
+
