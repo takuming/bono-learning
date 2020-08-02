@@ -3,54 +3,35 @@
   
   <Header></Header>
 
-  <div class="courselist">
-   <div class="content">
+  <div class="lesson">
+      <ul class="lesson-list">
+        <li class="content">
+          <a href="/courses/uifirst">
+            <div class="thumbnail uidesignflow"></div>
+            <p class="title">UIデザインの基本フロー</p>
+            <p class="subtext">UIの良し悪しを理由で判断するデザイン工程</p>
+            <p class="tag">動画数16本</p>
+          </a>
+        </li>
+        <li class="content">
+          <a href="">
+            <div class="thumbnail portfolio"></div>
+            <p class="title">ポートフォリオの作り方</p>
+            <p class="subtext">磨くスキルもわかる現場で見られるポイント</p>
+            <p class="tag">9月公開予定</p>
+          </a>
+        </li>
+        <li class="content">
+          <a href="">
+            <div class="thumbnail webdesignflow"></div>
+            <p class="title">Webデザインフロー基礎</p>
+            <p class="subtext">目的ストレートになるWebデザインフロー</p>
+            <p class="tag">9月公開予定</p>
+          </a>
+        </li>
+      </ul>
+    </div>  
 
-        <ul class="content-list">
-
-          <li class="item"> 
-            <a href="">
-                <div class="thumnail">
-                  <img src="https://prtimes.jp/i/39762/20/resize/d39762-20-959961-8.jpg" alt="">
-                </div>
-                <div class="text">
-                  <h4 class="title">はじめてのUIデザイン</h4>
-                  <p class="detail">HTMLやCSSの書き方は独学でも学べますが、コードが書けるだけでは仕事はできません。 デイ</p>
-                </div>
-              <ul class="lists">
-                <li v-for="item in uifirst" v-bind:key="item.id" class="content">
-                  <div class="copy">
-                    <p class="title">{{item.title}}</p>
-                  </div>
-                  <p class="time" v-html="item.text"></p>
-                </li>
-              </ul>
-            </a>
-          </li>
-
-          <li class="item"> 
-            <a href="">
-                <div class="thumnail">
-                  <img src="https://prtimes.jp/i/39762/20/resize/d39762-20-959961-8.jpg" alt="">
-                </div>
-                <div class="text">
-                  <h4 class="title">3角目のレッスン</h4>
-                  <p class="detail">HTMLやCSSの書き方は独学でも学べますが、コードが書けるだけでは仕事はできません。 デイ</p>
-                </div>
-              <ul class="lists">
-                <li v-for="item in uifirst" v-bind:key="item.id" class="content">
-                  <div class="copy">
-                    <p class="title">{{item.title}}</p>
-                  </div>
-                  <p class="time" v-html="item.text"></p>
-                </li>
-              </ul>
-            </a>
-          </li>
-
-        </ul>
-      </div>
- </div>
 </div>
 
 </template>
@@ -81,6 +62,126 @@ export default {
 <style lang="scss">
 @import "../../assets/sass/main.scss";
 @import "../../assets/sass/pretends.scss";
+
+//本家 ------------------------------------
+
+.lesson {
+  margin-bottom:$margin-5;
+	.title{
+    margin: 0 0 $margin-2;
+    .catch{
+      @include text-titleNormal;
+         color: $color-textWhite;
+           width: 33%;
+          margin: 0 auto;
+          font-family: futura;
+          margin-bottom: $margin--4;
+          text-align: center;
+      }
+    p{
+      font-size: $text-bodySmall;
+      color: $color-textWhite;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+	.lesson-list {
+    @include flex-spacebetween;
+    width: 80%;
+    margin: 0 auto;
+		.content {
+      color: $color-textWhite;
+      a{
+        text-decoration: none;
+         .thumbnail {
+          width: 320px;
+          height: 484px;
+          border-radius: 0 24px 24px 0;
+          background-size:cover ;
+          background-repeat: no-repeat;
+          box-shadow: 8px 8px 24px rgba($color: #000000, $alpha: 0.64);
+              &.uidesignflow{
+                background-image: url("books/book_uidesignflow.jpg");
+              }
+              &.portfolio{
+                background-image: url("books/book_portfolio.png");
+              }
+              &.webdesignflow{
+                background-image: url("books/book_webdesignflow.png");
+              }
+          }
+          .title {
+            font-size: $text-bodyBig;
+            color: $color-textWhite;
+            font-weight: bold;
+            margin: $margin--1 0 $margin--4;
+          }
+          .subtext {
+            font-size: $text-bodyNormal;
+            color: $color-textGray1;
+            margin: 0 0 $margin--3;
+          }
+          .tag {
+            font-size: $text-bodySmall;
+            color: $color-accentsibuTea;
+            font-weight: bold;
+          }
+      }
+		}
+	}
+}
+@media screen and (max-width: 640px){
+  .lesson {
+     margin-bottom:$margin-3;
+	.title{
+    .catch{
+      width: 100%;
+      font-size: $text-titleSmall;
+      text-align: center;
+    }
+    p{
+    }
+  }
+	.lesson-list {
+    width: 92%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+		.content {
+       width: calc(50% - 8px);
+       margin-bottom:$margin-1;
+      a{
+        text-decoration: none;
+         .thumbnail {
+          width: 100%;
+          height: 36.5vh;
+              &.uidesignflow{
+                background-image: url("books/book_uidesignflow.jpg");
+              }
+              &.portfolio{
+                background-image: url("books/book_portfolio.png");
+              }
+              &.webdesignflow{
+                background-image: url("books/book_webdesignflow.png");
+              }
+          }
+          .title {
+            font-size: $text-bodyNormal;
+          }
+          .subtext {
+            font-size: $text-bodySmall;
+          }
+          .tag {
+            font-size: $text-bodyTiny;
+          }
+      }
+		}
+	}
+}
+}
+
+
+
+//ssssss
 
 .courselist {
     max-width: 1180px;
