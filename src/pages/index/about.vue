@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header></Header>
     <div id="about">
       <Eyecatch></Eyecatch>
       <Explain></Explain>
@@ -12,6 +13,8 @@
 </template>
 
 <script>
+import Header from '../../../src/components/Header.vue'
+
 import Eyecatch from '../../../src/components/about/eyecatch.vue'
 import Explain from '../../../src/components/about/explain.vue'
 import ContentConcept from '../../../src/components/about/contentconcept.vue'
@@ -20,6 +23,7 @@ import Footer from '../../components/footer.vue'
 
 export default {
   components: {
+    Header,
     Eyecatch,
     Explain,
     ContentConcept,

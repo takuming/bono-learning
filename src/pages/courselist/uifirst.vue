@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    
+    <Header></Header>
+
     <div id="course-detail">
 
       <div class="title">
@@ -59,6 +62,7 @@
 
 <script>
 import { vueVimeoPlayer } from 'vue-vimeo-player'
+import Header from '../../components/Header.vue'
 
 export default {
   data() {
@@ -80,7 +84,8 @@ export default {
     }
   },
   components: { 
-    vueVimeoPlayer 
+    vueVimeoPlayer,
+    Header
   },
   methods: {
     change: function(num){

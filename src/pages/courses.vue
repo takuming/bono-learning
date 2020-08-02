@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header></Header>
     <div id="courses">
 
       <Title></Title>
@@ -12,12 +13,15 @@
 </template>
 
 <script>
+import Header from '../components/Header.vue'
+
 import Title from '../components/courses/title.vue'
 import CourseList from '../components/courses/course-list.vue'
 import Footer from '../components/footer.vue'
 
 export default {
   components: {
+    Header,
     Title,
     CourseList,
     Footer

@@ -1,0 +1,134 @@
+.form {
+  width: 320px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	.title {
+    text-align: center;
+    p{
+      font-size:$text-bodyTiny;
+      color: $color-textGray1;
+      margin-bottom:$margin--3;
+      letter-spacing: 2px;
+    }
+    h2{
+      font-size:$text-titleTiny;
+      font-weight: bold;
+      margin-bottom:$margin-2;
+      letter-spacing: 2px;
+    }
+  }
+  .wrap{
+    margin-bottom:$margin-3;
+    .email {
+      margin-bottom: $margin-0;
+      label{
+        font-size: $text-bodySmall;
+        font-weight: bold;
+        margin-bottom:$margin--3;
+        display: block;
+      }
+    }
+     .password {
+      margin-bottom: $margin-2;
+      label{
+        font-size: $text-bodySmall;
+        font-weight: bold;
+        margin-bottom:$margin--3;
+        display: block;
+      }
+    }
+     .button.full-button.w-button {
+    }
+    
+  }
+	
+	.another {
+    margin: 0 auto;
+    text-align: center;
+    width: 320px;
+    display: block;
+    &:hover{
+      opacity: 0.64;;
+    }
+    a{
+      padding: 16px;
+      width: 100%;
+      background-color: $color-bgLight1;
+      text-decoration: none;
+      color: $color-textGray1;
+      letter-spacing: 1px;
+    }
+	}
+}
+
+input[type="email"],input[type="password"]{
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  padding: 24px 4%;
+  border-radius: 8px;
+  width: 92%;
+  background-color:$color-bgWhite;
+}
+input[type="email"]:focus,input[type="password"]:focus,
+input[type="email"]:hover,input[type="password"]:hover,{
+  opacity: 0.8;
+  background-color:#dadbdd;
+}
+
+.w-button{
+  color: $color-textWhite;
+  background: $color-mainAkebono;
+  font-size: $text-bodyNormal;
+  font-weight: bold;
+  margin: 0 auto ;
+  padding: 20px 16px;
+  margin: 0 auto;
+  width: 320px;
+  height: 56px;
+  display:block;
+  transition: all 0.24s;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  border-radius: 8px;;
+}
+
+  .w-button:before{
+    background: $color-mainAkebono;
+    content:"";
+    transition: all 0.24s;
+    width: 320px;
+  height: 56px;
+  display:block;
+    position:absolute;
+    z-index:-1;
+    left:0;
+  }
+
+  .w-button:after{
+    background: linear-gradient(-45deg,#6748FF,#FF810F);
+    transition: all 0.24s;
+    content:"";
+    width: 320px;
+  height: 56px;
+  display:block;
+    position:absolute;
+    z-index:-2;
+    left:0;
+  }
+  
+  .w-button:hover:before{
+    opacity: 0;
+  }
+

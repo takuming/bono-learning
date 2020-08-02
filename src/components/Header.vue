@@ -6,12 +6,13 @@
         <li><router-link to="/">ホーム</router-link></li>
         <li><router-link to="/about">Dlearningについて</router-link></li>
         <li><router-link to="/courses">コミュニティ</router-link></li>
-        <li><a href="#/ms/signup/5ee8288c236d670004ffb9ee">サインアップ</a></li>
         <li data-ms-content="all-learning">テスト用の表示</li>
       </ul>
 
       <ul class="navlist">
-        <li><a href="#/ms/signup/5ec0a84d19a6420004dd6245">プロフィール</a></li>
+        <li data-ms-content="members"><a href="#/ms/profile">アカウント情報</a></li>
+        <li data-ms-content="!members"><a href="/signin">有料会員登録</a></li>
+        <li data-ms-content="!members"><a href="/login">ログイン</a></li>
       </ul>
 
       <!-- スマホナビ -->

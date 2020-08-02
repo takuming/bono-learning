@@ -1,5 +1,9 @@
 <template>
- <div class="courselist">
+<div id="app">
+  
+  <Header></Header>
+
+  <div class="courselist">
    <div class="content">
 
         <ul class="content-list">
@@ -47,10 +51,13 @@
         </ul>
       </div>
  </div>
+</div>
+
 </template>
 
 <script>
-// import courseDetail from './course_detail.js'
+import Header from '../../components/Header.vue'
+
 export default {
   data() {
     return {
@@ -66,6 +73,7 @@ export default {
     }
   },
   components: {
+    Header
   },
 }
 </script>

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/login'
 import Signin from '@/components/signin'
+import Moveout from '@/components/moveout'
 
 import Index from '@/pages/index/index'
 import About from '@/pages/index/about'
@@ -50,6 +51,11 @@ export default new Router({
       path: '/signin',
       name: 'Signin',
       component: Signin
+    },
+    {
+      path: '/moveout',
+      name: 'Moveout',
+      component: Moveout
     }
   ]
 })
