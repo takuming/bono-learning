@@ -6,14 +6,14 @@
   <div class="lesson">
       <ul class="lesson-list">
         <li class="content">
-          <a href="/courses/uifirst">
+          <a href="/#/courses/uifirst">
             <div class="thumbnail uidesignflow"></div>
             <p class="title">UIデザインの基本フロー</p>
             <p class="subtext">UIの良し悪しを理由で判断するデザイン工程</p>
             <p class="tag">動画数16本</p>
           </a>
         </li>
-        <li class="content">
+        <li class="content future">
           <a href="">
             <div class="thumbnail portfolio"></div>
             <p class="title">ポートフォリオの作り方</p>
@@ -21,7 +21,7 @@
             <p class="tag">9月公開予定</p>
           </a>
         </li>
-        <li class="content">
+        <li class="content future">
           <a href="">
             <div class="thumbnail webdesignflow"></div>
             <p class="title">Webデザインフロー基礎</p>
@@ -88,17 +88,31 @@ export default {
 	.lesson-list {
     @include flex-spacebetween;
     width: 80%;
+    max-width: 960px;
     margin: 0 auto;
 		.content {
       color: $color-textWhite;
+      transition: all 0.24s;
+      top: 0;
+      position: relative;
+      &:hover{
+        opacity: 0.92;
+        top: -4px;
+      }
+      &.future{
+        opacity: 0.16;
+      }
       a{
         text-decoration: none;
          .thumbnail {
-          width: 320px;
-          height: 484px;
+          width: 100%;
+          height: 0;
+          padding-top: 151.2%;
           border-radius: 0 24px 24px 0;
           background-size:cover ;
           background-repeat: no-repeat;
+          top: 0;
+          position: relative;
           box-shadow: 8px 8px 24px rgba($color: #000000, $alpha: 0.64);
               &.uidesignflow{
                 background-image: url("books/book_uidesignflow.jpg");
@@ -114,7 +128,9 @@ export default {
             font-size: $text-bodyBig;
             color: $color-textWhite;
             font-weight: bold;
-            margin: $margin--1 0 $margin--4;
+            margin: $margin--2 0 $margin--4;
+            text-align: left;
+            letter-spacing: 1px;
           }
           .subtext {
             font-size: $text-bodyNormal;
@@ -130,7 +146,7 @@ export default {
 		}
 	}
 }
-@media screen and (max-width: 640px){
+@media screen and (max-width: 1100px){
   .lesson {
      margin-bottom:$margin-3;
 	.title{
@@ -152,8 +168,6 @@ export default {
       a{
         text-decoration: none;
          .thumbnail {
-          width: 100%;
-          height: 36.5vh;
               &.uidesignflow{
                 background-image: url("books/book_uidesignflow.jpg");
               }

@@ -2,17 +2,14 @@
     <div class="header">
 
       <ul class="navlist">
-        <div class="logo"><img src="https://o.imgz.jp/pc/common/header-brand-logo.png" alt=""></div>
+        <div class="logo"><a href="/"><img src="https://o.imgz.jp/pc/common/header-brand-logo.png" alt=""></a></div>
       </ul>
 
-      <ul class="navlist">
-        <li><a href="/login">ログイン</a></li>
+      <ul class="navlist right">
+        <li><a href="/#/login">ログイン</a></li>
       </ul>
-
-      
 
     </div>
-
     
 </template>
 
@@ -88,8 +85,13 @@ export default {
 }
 
 @media screen and (max-width: 640px){
-  .navlist li{
-      display: none;
+  .navlist {
+    li{
+      display: block;
+    } 
+  }
+  .navlist.right{
+    margin: 0;
   }
   .header__menu{
     display: block;

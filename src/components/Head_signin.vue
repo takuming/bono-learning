@@ -5,8 +5,8 @@
         <div class="logo"><img src="https://o.imgz.jp/pc/common/header-brand-logo.png" alt=""></div>
       </ul>
 
-      <ul class="navlist">
-        <li><a href="/login">新規登録</a></li>
+      <ul class="navlist right">
+        <li><a href="/#/signin">新規登録</a></li>
       </ul>
 
       
@@ -88,8 +88,13 @@ export default {
 }
 
 @media screen and (max-width: 640px){
-  .navlist li{
-      display: none;
+  .navlist {
+    li{
+      display: block;
+    } 
+  }
+  .navlist.right{
+    margin: 0;
   }
   .header__menu{
     display: block;

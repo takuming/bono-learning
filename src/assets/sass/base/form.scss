@@ -55,12 +55,13 @@
       opacity: 0.64;;
     }
     a{
-      padding: 16px;
+      padding: 12px 16px;
       width: 100%;
       background-color: $color-bgLight1;
       text-decoration: none;
       color: $color-textGray1;
       letter-spacing: 1px;
+      border-radius: 1000px;
     }
 	}
 }
