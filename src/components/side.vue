@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <p class="unleash">Unleash Your Creativity</p>
+    <p class="unleash">Dawn of Your Creativity</p>
     <p class="keep">Keep Making It</p>
   </div>
 </template>

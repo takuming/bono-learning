@@ -30,6 +30,18 @@
           </a>
         </li>
       </ul>
+
+      <ul class="lesson-list">
+        <li class="content future">
+          <a>
+            <div class="thumbnail uistyling"></div>
+            <p class="title">UIスタイリング</p>
+            <p class="subtext">機能とスタイルを両立したUI作成方法</p>
+            <p class="tag">10月公開予定</p>
+          </a>
+        </li>
+      </ul>
+
     </div>  
 
 </div>
@@ -88,8 +100,8 @@ export default {
 	.lesson-list {
     @include flex-spacebetween;
     width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 0 auto $margin-3;
 		.content {
       color: $color-textWhite;
       transition: all 0.24s;
@@ -122,6 +134,9 @@ export default {
               }
               &.webdesignflow{
                 background-image: url("books/book_webdesignflow.png");
+              }
+              &.uistyling{
+                background-image: url("books/book_uistyling.png");
               }
           }
           .title {
