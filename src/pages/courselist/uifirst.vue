@@ -3,7 +3,7 @@
 
     <Header></Header>
 
-    <div id="course-detail">
+    <div id="course-detail" data-ms-content="all-learning">
 
       <div class="title">
           <h2>UI DESIGN FLOW BASIC</h2>

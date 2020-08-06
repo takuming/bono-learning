@@ -2,7 +2,7 @@
     <div class="header">
 
       <ul class="navlist">
-        <div class="logo"><img src="https://o.imgz.jp/pc/common/header-brand-logo.png" alt=""></div>
+        <div class="logo"><router-link to="/"><img src="https://o.imgz.jp/pc/common/header-brand-logo.png" alt=""></router-link></div>
       </ul>
 
       <ul class="navlist right">

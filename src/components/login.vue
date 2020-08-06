@@ -21,7 +21,7 @@
       <input type="submit" value="ログイン" data-wait="Please wait..." class="button full-button w-button">
     </form>
      <div class="another">
-      <a href="/signin">アカウントをお持ちでない方はこちら</a>
+      <a href="/#/signin">アカウントをお持ちでない方はこちら</a>
     </div>
 
     

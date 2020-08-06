@@ -2,15 +2,14 @@
     <div class="header">
 
       <ul class="navlist">
-        <div class="logo"><router-link to="/"><img src="https://o.imgz.jp/pc/common/header-brand-logo.png" alt=""></router-link></div>
+        <div class="logo"><router-link to="/"><img src="../assets/service_id.svg" alt=""></router-link></div>
         <li><router-link to="/">ホーム</router-link></li>
         <!-- <li><router-link to="/about">Dlearningについて</router-link></li> -->
-        <li><router-link to="/courses">コミュニティ</router-link></li>
-        <li data-ms-content="all-learning">有料モード</li>
+        <li data-ms-content="all-learning"><a href="https://discord.com/channels/738988251523579975">コミュニティへ</a></li>
       </ul>
 
       <ul class="navlist">
-        <li data-ms-content="members"><a href="#/ms/profile">アカウント情報</a></li>
+        <li data-ms-content="members"><a href="/#/ms/profile">アカウント情報</a></li>
         <li data-ms-content="!members"><a href="/#/login">ログイン</a></li>
         <li data-ms-content="!members"><a href="/#/signin">有料会員登録</a></li>
         
@@ -27,7 +26,7 @@
       <transition name="sp-navi">
         <nav class="sp-navi" v-show="navi">
           <ul class="navi__wrap">
-            <li><router-link to="/">ホーム</router-link></li>
+            <li><router-link to="/#">ホーム</router-link></li>
             <li data-ms-content="members"><a href="#/ms/profile">アカウント情報</a></li>
             <li data-ms-content="!members"><a href="/#/login">ログイン</a></li>
             <li data-ms-content="!members"><a href="/#/signin">有料会員登録</a></li>

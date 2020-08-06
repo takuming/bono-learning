@@ -25,7 +25,7 @@
     </form>
 
     <div class="another">
-      <a href="/login">ログインはこちら</a>
+      <a href="/#/login">ログインはこちら</a>
     </div>
   </div>
 
